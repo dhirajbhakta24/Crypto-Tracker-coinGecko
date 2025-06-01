@@ -7,9 +7,9 @@ export async function fetchCoinData(page =1,currency='usd') {
         &order=market_cap_desc
         &per_page=${perPage}&page=${page}`);
 
-    console.log(response);
+    
 
-    return response;
+    return response.data;
   } catch (error) {
     console.error(error);
 
